@@ -1,0 +1,18 @@
+---
+---
+
+@import "minima";
+
+@media screen and (max-width: 600px) {
+  .site-nav label[for="nav-trigger"] {
+    display: none;
+  }
+
+  .site-nav .menu-icon {
+    display: none;
+  }
+
+  .site-nav input ~ .trigger {
+    display: block;
+  }
+}
