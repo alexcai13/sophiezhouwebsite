@@ -3,6 +3,77 @@
 
 @import "minima";
 
+.page-card {
+  margin-top: 1.5rem;
+}
+
+.page-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+}
+
+.music-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.music-list li {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.music-list strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  text-transform: lowercase;
+}
+
+.music-list span {
+  display: block;
+  color: #666;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.photo-card {
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4)),
+    linear-gradient(135deg, #8aa6b8, #c27d6b 55%, #2d3047);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.photo-card:nth-child(2n) {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.42)),
+    linear-gradient(135deg, #4f6d7a, #ddbea9 52%, #b5838d);
+}
+
+.photo-card:nth-child(3n) {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.42)),
+    linear-gradient(135deg, #264653, #2a9d8f 56%, #e9c46a);
+}
+
 @media screen and (max-width: 600px) {
   .site-nav label[for="nav-trigger"] {
     display: none;
